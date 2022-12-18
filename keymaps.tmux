@@ -33,10 +33,4 @@ bind c new-window -c "#{pane_current_path}"
 # Go to a marked pane
 bind \` switch-client -t'{marked}'
 
-# Copy/paste
-bind -T copy-mode-vi v send -X begin-selection
-bind -T copy-mode-vi y send-keys -X copy-pipe-and-cancel "pbcopy"
-bind -T copy-mode-vi MouseDragEnd1Pane send-keys -X copy-pipe-and-cancel "pbcopy"
-bind P paste-buffer
-
 bind -n C-z run-shell "ps -o state= -o comm= -t '#{pane_tty}'"
