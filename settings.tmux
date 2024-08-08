@@ -6,7 +6,7 @@ set -g renumber-windows on
 set -g mouse on
 
 # Default was 2000 lines
-set -g history-limit 5000
+set -g history-limit 20000
 
 # Prevent auto-renaming windows
 set -g allow-rename off
